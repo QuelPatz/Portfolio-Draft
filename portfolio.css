@@ -235,3 +235,16 @@
         padding: 2px;
     }
 /*above are the drawing canvas style*/
+
+/*bellow are the XMLHttpRequest style*/
+    #tvshow {
+        color: #c7c2cd;
+        padding-bottom: 1em;
+    }
+    table {
+        background-color: #534b57;
+    }
+    #ajax h2 {
+        color: rgb(100, 76, 184);
+    }
+/*above are the XMLHttpRequest style*/
