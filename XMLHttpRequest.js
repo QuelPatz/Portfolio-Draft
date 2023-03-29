@@ -25,5 +25,5 @@ function loadXMLDoc() {
         x[i].getElementsByTagName("SEASONS")[0].childNodes[0].nodeValue +
         "</td></tr>";
     }
-    document.getElementById("tvshow").innerHTML = table;
+    document.getElementById("tvshow2").innerHTML = table;
   }
