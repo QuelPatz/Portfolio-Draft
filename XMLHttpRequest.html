@@ -32,7 +32,7 @@
           <button class="tvshow-button" onclick="loadXMLDoc()">Tv shows Info </button>
           </div>
   
-        <table id="tvshows">
+        <table id="tvshow">
           <tr>
             <th>TV Show</th>
             <th>Release Year</th>
@@ -52,12 +52,12 @@
 
       <script>
         function loadXMLDoc() {
-          const xhttp = new XMLHttpRequest();
-          xhttp.onload = function() {
-            document.getElementById("demo").innerHTML = this.responseText;
+          const xmlhttp = new XMLHttpRequest();
+          xmlhttp.onload = function() {
+            document.getElementById("tvshow").innerHTML = this.responseText;
             }
-          xhttp.open("GET", "ajax.txt", true);
-          xhttp.send();
+          xmlhttp.open("GET", "ajax.txt", true);
+          xmlhttp.send();
         }
       </script>
  
