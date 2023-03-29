@@ -1,4 +1,4 @@
-function loadXMLDoc() {
+function loadXMLDoc2() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
@@ -25,5 +25,5 @@ function loadXMLDoc() {
         x[i].getElementsByTagName("SEASONS")[0].childNodes[0].nodeValue +
         "</td></tr>";
     }
-    document.getElementById("TVSHOW").innerHTML = table;
+    document.getElementById("tvshow").innerHTML = table;
   }
