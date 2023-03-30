@@ -52,7 +52,7 @@
         function loadXMLDoc2() {
           const xmlhttp = new XMLHttpRequest();
           xmlhttp.onload = function() {
-            document.getElementById("tvshow").innerHTML = this.responseText;
+            document.getElementById("ajax").innerHTML = this.responseText;
             }
           xmlhttp.open("GET", "ajax.txt", true);
           xmlhttp.send();
