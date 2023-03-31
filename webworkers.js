@@ -6,12 +6,12 @@ const result = document.querySelector('.result');
 if (window.Worker) {
   const myWorker = new Worker("worker.js");
 
-  first.onchange = function() {
+  first.onkeyup = function() {
     myWorker.postMessage([first.value, second.value]);
     console.log('Message posted to worker');
   }
 
-  second.onchange = function() {
+  second.onkeyup = function() {
     myWorker.postMessage([first.value, second.value]);
     console.log('Message posted to worker');
   }
