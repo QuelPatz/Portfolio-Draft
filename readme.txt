@@ -1,5 +1,4 @@
-# Check list
-
+# Tasks
 1	Be able to create HTML5 pages and code with JavaScript
 2	Style with CSS and implement one of the CSS3 effects
 3	Be able to create forms using HTML5 with JavaScript validation
@@ -11,9 +10,10 @@
 9	Web Sockets (Real Time Communication)
 10	Local storage (Offline Support) and Web worker
 
-#### Setup
 
-To run the code, navigate and open de 'index.htm' file in your browser or click on this <a href="https://github.com/QuelPatz/Portfolio">link</a>
+# Setup
+
+To run the code, navigate and open de 'index.htm' file in your browser or click on this <a href="https://github.com/QuelPatz/Portfolio/">Link</a>
 
 
 ============================
