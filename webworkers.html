@@ -73,6 +73,41 @@
     <p class="result">Result: 0</p>
   </div>
   <script src="webworkers.js"></script>
+  
+  <!-- Start of numbers-->
+  <section class="number">
+    <h2>Numbers Generator</h2>
+    <p>Click the button below to see a number generated</p>
+    <button onclick="startWorker()">Start</button>
+    <button onclick="stopWorker()">Stop</button>
+    <p><output id="result"></output></p>
+  </section>
+  <script>
+    var w;
+    function startWorker() {
+      if (typeof Worker !== "undefined") {
+        if (typeof w == "undefined") {
+          w = new Worker("numbers.js");
+        }
+        w.onmessage = function (event) {
+          document.getElementById("result").innerHTML = event.data;
+        };
+      } else {
+        document.getElementById("result").innerHTML =
+          "Sorry! No Web Worker support.";
+      }
+      var codeBlock = document.getElementById("#result");
+      codeBlock.style.opacity = 0;
+      setTimeout(function () {
+        codeBlock.style.opacity = 1;
+      }, 1000);
+    }
+
+    function stopWorker() {
+      w.terminate();
+      w = undefined;
+    }
+  </script>
   <script type="module" src="app.js"></script>
 
   <footer>
