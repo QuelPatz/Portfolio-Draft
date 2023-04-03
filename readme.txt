@@ -13,7 +13,7 @@
 
 # Setup
 
-To run the code, navigate and open de 'index.htm' file in your browser or click on this <a href="https://github.com/QuelPatz/Portfolio/">Link</a>
+To run the code, navigate and open de 'index.htm' file in your browser or click on this <a href="https://quelpatz.github.io/Portfolio/">Link</a>
 
 
 ============================
