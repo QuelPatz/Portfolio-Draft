@@ -248,3 +248,17 @@
         color: rgb(100, 76, 184);
     }
 /*above are the XMLHttpRequest style*/
+/*bellow are the style for the number board*/
+.number {
+    background-color: rgb(100, 76, 184);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.number #result {
+    font-size: 80px;
+}
